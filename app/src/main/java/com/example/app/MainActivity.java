@@ -11,7 +11,7 @@ import android.webkit.WebViewClient;
 
 public class MainActivity extends Activity {
 
-    private WebView mWebView;
+    private WebView webView;
 
     @Override
     @SuppressLint("SetJavaScriptEnabled")
@@ -97,8 +97,8 @@ public class MainActivity extends Activity {
 
     @Override
     public void onBackPressed() {
-        if(mWebView.canGoBack()) {
-            mWebView.goBack();
+        if(webView.canGoBack()) {
+            webView.goBack();
         } else {
             super.onBackPressed();
         }
